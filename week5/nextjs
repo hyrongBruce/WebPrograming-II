@@ -1,0 +1,39 @@
+    next js : 直接加你想要的页面的js文件就好
+routes会直接加进去
+
+    npm install next。。。。
+    记得改package。json
+    npm run dev
+
+    link： <link herf = "/shows">
+                <a>name</a>// any type of html tag. button p a 均可
+            </link>
+
+    Wraping pages:
+        /components/header.js
+        exprot default header
+        然后在pages里边的js页面里用<Header/>就好
+
+    My layout
+        /components/MyLayOut.js
+        export default MyLayOut;
+        index里用就好，还要import
+    
+    link option: <link as=.... herf =....>
+        as用于隐藏query string
+        but as is client side, sever dont know what as content link 
+        Therefore we need to write some js(server.js)
+
+        also package.json, we used to use "dev":"next"
+        change to "dev": "node server.js"
+
+    Styling:
+        js中写<style jsx> css stuff </style>  
+
+        global style:
+        copy paste to layout.js
+        and set jsx= global in <style jsx=global>
+
+    总体来说就是快+好写     
+
+    

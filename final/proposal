@@ -1,0 +1,11 @@
+template
+Schema:(架构)
+    user:
+        userId:
+        
+        passwd:
+    file:(subDocument): store in a tree?
+        folderName:
+        Childern:Object array
+        Parent:
+Firebase:
